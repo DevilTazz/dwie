@@ -2,14 +2,23 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Ograniczona wersja</title>
+  <title>Ekran lewy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="screen screen-left full-screen">
-    <h1>Tylko ekran lewy</h1>
-    <p>Chcesz dostęp do większej zawartości?</p>
-    <a href="/">Zainstaluj aplikację</a>
+    <h1>Ekran lewy</h1>
+    <button id="showInfo">Zobacz więcej</button>
+    <p id="infoText" style="display: none; margin-top: 1em;">
+      Pełna zawartość dostępna po zainstalowaniu aplikacji.
+    </p>
+    <a href="/">Powrót</a>
   </div>
+
+  <script>
+    document.getElementById('showInfo').addEventListener('click', () => {
+      document.getElementById('infoText').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
