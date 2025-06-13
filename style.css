@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  width: 200vw;
+  height: 100vh;
+  transition: transform 0.5s ease;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.screen-left {
+  background: #1e1e2f;
+  color: white;
+}
+
+.screen-main {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
