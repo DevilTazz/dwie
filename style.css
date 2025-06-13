@@ -35,3 +35,17 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
